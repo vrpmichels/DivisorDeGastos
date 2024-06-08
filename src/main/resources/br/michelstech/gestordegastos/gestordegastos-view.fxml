@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.michelstech.gestordegastos.controller.GestordeGastosController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+             <Button id="botaoSalvar" layoutX="420.0" layoutY="50.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Salvar" textAlignment="CENTER" />
+             <Button id="botaoEditar" layoutX="550.0" layoutY="50.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Editar" textAlignment="CENTER" />
+             <Button id="botaoExcluir" layoutX="680.0" layoutY="50.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Excluir" textAlignment="CENTER" />
+             <DatePicker id="dataLancamento" layoutX="20.0" layoutY="50.0" prefHeight="25.0" promptText="Data Lançamento" />
+             <DatePicker id="dataDespesa" layoutX="600.0" layoutY="120.0" prefHeight="25.0" promptText="Data Despesa" />
+             <TextField id="nomeDespesa" layoutX="20.0" layoutY="120.0" prefHeight="25.0" prefWidth="350.0" promptText="Despesa" />
+             <TextField id="valor" layoutX="410.0" layoutY="120.0" prefHeight="25.0" promptText="Valor" />
+         </children>
+      </Pane>
+       <TableView prefHeight="226.0" prefWidth="695.0">
+           <columns>
+               <TableColumn fx:id="colCodigo" prefWidth="75.0" text="Código" />
+               <TableColumn fx:id="colDespesa" prefWidth="75.0" text="Despesa" />
+               <TableColumn fx:id="colValor" prefWidth="75.0" text="Valor" />
+               <TableColumn fx:id="colDataLancamento" prefWidth="121.0" text="Data Lançamento" />
+               <TableColumn fx:id="colDataDespesa" prefWidth="121.0" text="Data Despesa" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>
